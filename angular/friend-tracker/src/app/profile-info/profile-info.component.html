@@ -1,21 +1,17 @@
     <img 
-      src="assets/Brittani headshots.jpg" 
+      src="{{ profilePictureUrl }}" 
       alt="Brittani" 
       height="200" 
     />
-    
+
     <h2>My Profile</h2>
     <h3>Name</h3>
-    <p>Brittani Lovelace</p>
+    <p>{{ name }}</p>
     <h3>Age</h3>
-    <p>32</p>
+    <p>{{ age }}</p>
     <h3>Bio</h3>
-    <p>I like to play video games and I am passionate about computers and coding.</p>
+    <p>{{ bio }}</p>
     <h3>Birthday</h3>
-    <p>February 27, 1993</p>
+    <p>{{ birthday }}</p>
     <h3>Interests</h3>
-    <ul>
-      <li>Video Games</li>
-      <li>Coding</li>
-      <li>Technology(computers)</li>
-    </ul>
+    <p>{{ interests.join(', ') }}</p>
