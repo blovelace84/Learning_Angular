@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'abccdefg',
+  selector: 'app-profile-info',
   imports: [],
   templateUrl: './profile-info.component.html',
   styleUrl: './profile-info.component.css'
