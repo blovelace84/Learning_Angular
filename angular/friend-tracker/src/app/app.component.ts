@@ -10,4 +10,5 @@ import { ProfileInfoComponent } from "./profile-info/profile-info.component";
 })
 export class AppComponent {
   title = 'friend-tracker';
+  personName = "Alyssa Wise";
 }
