@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, input, Input, OnInit } from '@angular/core';
 import { Person } from '../../types';
 
 @Component({
@@ -7,7 +7,7 @@ import { Person } from '../../types';
   templateUrl: './profile-info.component.html',
   styleUrl: './profile-info.component.css'
 })
-export class ProfileInfoComponent {
+export class ProfileInfoComponent implements OnInit {
   @Input() person: Person = {
     name: "",
     profilePictureUrl: "",
@@ -16,5 +16,12 @@ export class ProfileInfoComponent {
     birthday: "",
     interests: [],
   }
-   
+   constructor() {}
+
+   ngOnInit(): void {
+   }
+
+   displayDetails(name: string, age: number): void {
+      alert(`${name} is ${age} years old`);
+   }
 }

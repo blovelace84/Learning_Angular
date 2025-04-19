@@ -13,4 +13,8 @@ import { ProfileInfoComponent } from './profile-info/profile-info.component';
 export class AppComponent {
   myProfileData: Person = myProfileData;
   friendsData: Person[] = friendsData;
+
+  sayHello() {
+    alert("Hello my friends!");
+  }
 }
