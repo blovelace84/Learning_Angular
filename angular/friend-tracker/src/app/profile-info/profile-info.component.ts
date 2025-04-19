@@ -1,4 +1,5 @@
 import { Component, input, Input } from '@angular/core';
+import { Person } from '../../types';
 
 @Component({
   selector: 'app-profile-info',
@@ -7,10 +8,13 @@ import { Component, input, Input } from '@angular/core';
   styleUrl: './profile-info.component.css'
 })
 export class ProfileInfoComponent {
-  @Input() name = "";
-  @Input() profilePictureUrl = "";
-  @Input() age = 0;
-  @Input() bio = "I like to play video games and I am passionate about computers and coding.";
-  @Input() birthday = "February 27, 1993";
-  @Input() interests: string[] = [];
+  @Input() person: Person = {
+    name: "",
+    profilePictureUrl: "",
+    age: 0,
+    bio: "",
+    birthday: "",
+    interests: [],
+  }
+   
 }
