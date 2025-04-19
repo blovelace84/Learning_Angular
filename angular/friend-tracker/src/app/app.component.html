@@ -1,7 +1,8 @@
 <h1>Friend Tracker</h1>
 <div>
-  <app-profile-info
-    [person]="myPerson"
-  ></app-profile-info>
+  <app-profile-info [person]="myProfileData"></app-profile-info>
+  <app-profile-info [person] = "friendsData[0]"></app-profile-info>
+  <app-profile-info [person] = "friendsData[1]"></app-profile-info>
+  <app-profile-info [person] = "friendsData[2]"></app-profile-info>
 </div>
 
